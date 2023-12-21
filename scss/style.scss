@@ -1,0 +1,59 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+$azul-oscuro: #001B44;
+$blanco: #ffffff;
+$fuente-principal: 'Lato', sans-serif;
+
+header {
+  background-color: $azul-oscuro;
+  color: $blanco;
+  padding: 20px; // Ajusta según sea necesario
+  text-align: center;
+       }
+
+ h1 {
+    margin: 0;
+    font-family: $fuente-principal;
+    font-size: 28px; // Ajusta según sea necesario
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 20px; // Ajusta según sea necesario
+
+        a {
+          text-decoration: none;
+          color: $blanco;
+          font-family: $fuente-principal;
+
+          &:hover {
+            border-bottom: 2px solid $blanco; // Efecto al pasar el ratón
+          }
+        }
+      }
+    }
+  }
+
+    @media (max-width: 768px) {
+    h1 {
+      font-size: 24px; // Ajusta el tamaño de la fuente para pantallas más pequeñas
+    }
+
+    nav {
+      ul {
+        flex-direction: column; // Cambia la dirección de la flexbox para pantallas pequeñas
+        align-items: center; // Centra los elementos en el eje vertical
+      }
+
+      li {
+        display: block; // Cambia el display a bloque para que aparezcan en una línea en pantallas pequeñas
+        margin-bottom: 10px; // Espacio entre los elementos
+      }
+    }
+  }
