@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameWave - Tu Destino de Juegos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -29,25 +29,29 @@
 
     <!-- Contenido Principal -->
     <main>
+        <section id="introduccion">
+            <h2>Bienvenido a GameWave</h2>
+            <p>Explora el emocionante mundo de los videojuegos con GameWave. Aquí encontrarás información sobre los juegos más destacados para Xbox, PlayStation, Nintendo, y mucho más. ¡Sumérgete en la acción y descubre tu próximo juego favorito!</p>
+        </section>
+
         <section id="inicio">
             <h2>Destacados</h2>
-            <!-- Juego 1 -->
+            
             <article>
                 <h3>Baldur's Gate 3</h3>
-                <img src="img/baldur.jpg" alt="Portada del Juego 1">
-                <p>Experimenta el regreso esperado de la querida saga RPG con Baldur's Gate 3. 
+                <img class="baldur" src="img/baldur.jpg" alt="Portada del Juego 1">
+                <p class="p-baldur">Experimenta el regreso esperado de la querida saga RPG con Baldur's Gate 3. 
                     Desarrollado por Larian Studios, creadores de Divinity: Original Sin, este RPG 
                     de fantasía te sumerge en un mundo épico. Enfrenta la amenaza de los Azotamentes, 
                     crea tu aventurero con 12 clases y 46 subclases, y elige entre cientos de hechizos y 
                     habilidades únicas. Baldur's Gate 3 ofrece una experiencia de rol inmersiva, 
                     capturando la esencia de las clásicas partidas de tablero y dados en PC y PS5.</p>
             </article>
-            
-            <!-- Juego 2 -->
+
             <article>
                 <h3>Alan Wake 2</h3>
-                <img src="img/alan.jpg" alt="Portada del Juego 2">
-                <p>Alan Wake 2 da continuación al aclamado videojuego de acción y aventura lanzado en 
+                <img class="alan" src="img/alan.jpg" alt="Portada del Juego 2">
+                <p class="p-alan">Alan Wake 2 da continuación al aclamado videojuego de acción y aventura lanzado en 
                     2010 con una apuesta decidida por sistemas de nueva generación así como por el 
                     terror, siendo la primera incursión de Remedy Entertainment en el género 
                     survival-horror, por lo que se espera una experiencia escalofriante con elementos 
@@ -55,42 +59,64 @@
             </article>
         </section>
 
-        <!-- Catálogo de Juegos por Consolas -->
         <section id="xbox">
             <h2>Xbox</h2>
-            <!-- Lista de juegos para Xbox -->
+            <p>Explora la emocionante biblioteca de juegos para Xbox. Desde emocionantes carreras en Forza MotorSport hasta intensas experiencias en Hellblade 2, Xbox tiene algo para todos los jugadores.</p>
             <ul>
-                <li>Forza MotorSport</li>
-                <li>Hellblade 2</li>
-                <!-- Agrega más juegos según sea necesario -->
+                <li>
+                    <h3>Forza MotorSport</h3>
+                    <img src="img/forza.jpg" alt="Forza MotorSport">
+                    <p>Experimenta la adrenalina de las carreras en uno de los simuladores de conducción más realistas. Forza MotorSport te lleva a la pista con gráficos impresionantes y una amplia variedad de vehículos.</p>
+                </li>
+                <li>
+                    <h3>Hellblade 2</h3>
+                    <img src="img/hellblade2.jpeg" alt="Hellblade 2">
+                    <p>Sumérgete en un mundo oscuro y lleno de acción con Hellblade 2. Desarrollado por Ninja Theory, este juego ofrece una experiencia única que combina narrativa intensa y combate emocionante.</p>
+                </li>
             </ul>
         </section>
 
         <section id="playstation">
             <h2>PlayStation</h2>
-            <!-- Lista de juegos para PlayStation -->
+            <p>Sumérgete en el mundo de PlayStation con títulos emocionantes. Desde superhéroes en Marvel's Wolverine hasta la acción trepidante de Spider-Man 2, PlayStation ofrece experiencias inolvidables.</p>
             <ul>
-                <li>Juego para PlayStation 1</li>
-                <li>Juego para PlayStation 2</li>
-                <!-- Agrega más juegos según sea necesario -->
+                <li>
+                    <h3>Marvel's Wolverine</h3>
+                    <img src="img/wolverine.jpeg" alt="Marvel's Wolverine">
+                    <p>Embárcate en una aventura épica con uno de los héroes más icónicos de Marvel. Marvel's Wolverine promete una historia intensa y combate feroz en el universo de los X-Men.</p>
+                </li>
+                <li>
+                    <h3>Spider-Man 2</h3>
+                    <img src="img/spiderman2.jpg" alt="Spider-Man 2">
+                    <p>Vuelve a columpiarte por la ciudad de Nueva York con Spider-Man 2. Con gráficos impresionantes y una jugabilidad mejorada, este juego te sumerge en el papel del trepamuros.</p>
+                </li>
             </ul>
         </section>
 
-        <section id="nintendo">
+     <section id="nintendo">
             <h2>Nintendo</h2>
-            <!-- Lista de juegos para Nintendo -->
+            <p>Descubre la magia de Nintendo con juegos cautivadores. Desde la exploración en Metroid Prime 4 hasta las aventuras épicas en The Legend of Zelda: Tears of the Kingdom, Nintendo ofrece diversión para todas las edades.</p>
             <ul>
-                <li>Juego para Nintendo Switch</li>
-                <li>Juego para Nintendo 3DS</li>
-                <!-- Agrega más juegos según sea necesario -->
+                <li>
+                    <h3>Metroid Prime 4</h3>
+                    <img src="img/metroid.jpg" alt="Metroid Prime 4">
+                    <p>Embárcate en una misión intergaláctica con Samus Aran en Metroid Prime 4. Este juego promete acción y exploración en un universo alienígena lleno de misterios.</p>
+                </li>
+                <li>
+                    <h3>The Legend of Zelda: Tears of the Kingdom</h3>
+                    <img src="img/zelda.jpg" alt="The Legend of Zelda: Tears of the Kingdom">
+                    <p>Vuelve a sumergirte en la epopeya de Link con The Legend of Zelda: Tears of the Kingdom. Descubre nuevos mundos, resuelve acertijos y enfréntate a desafiantes enemigos en esta nueva entrega de la serie.</p>
+                </li>
             </ul>
         </section>
 
-        <!-- Sección de Novedades o Últimas Reseñas -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <!-- Información de contacto o formulario de contacto -->
-        </section>
+<section id="contacto" class="bg-light py-5">
+    <div class="container text-center">
+        <h2>Contacto</h2>
+        <p class="text-muted">¿Tienes preguntas, comentarios o sugerencias? Estamos aquí para ayudarte. Contáctanos y estaremos encantados de escucharte.</p>
+        <a href="#" class="btn btn-primary">Contáctanos</a>
+    </div>
+</section>
     </main>
 
     <!-- Pie de Página -->
