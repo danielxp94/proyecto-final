@@ -8,11 +8,19 @@ $color-texto-footer: #fff;
 $padding-footer: 20px;
 
 header {
-  background: linear-gradient(to bottom, $azul-oscuro, $blanco); // Gradient de azul a blanco
+  background: linear-gradient(to bottom, $azul-oscuro, $blanco);
   color: $blanco;
-  padding: 20px; // Ajusta según sea necesario
+  padding: 20px;
   text-align: center;
-       }
+  position: fixed;  // Fija el encabezado en la parte superior de la ventana
+  width: 100%;      // Ancho completo
+  top: 0;           // Se mantiene en la parte superior
+  z-index: 1000;    // Asegura que esté por encima de otros elementos
+}
+
+main {
+  margin-top: 80px; // Ajusta según sea necesario
+}
 
  h1 {
     margin: 0;
