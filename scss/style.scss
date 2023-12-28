@@ -12,20 +12,20 @@ header {
   color: $blanco;
   padding: 20px;
   text-align: center;
-  position: fixed;  // Fija el encabezado en la parte superior de la ventana
-  width: 100%;      // Ancho completo
-  top: 0;           // Se mantiene en la parte superior
-  z-index: 1000;    // Asegura que esté por encima de otros elementos
+  position: fixed;  
+  width: 100%;     
+  top: 0;         
+  z-index: 1000;    
 }
 
 main {
-  margin-top: 80px; // Ajusta según sea necesario
+  margin-top: 80px; 
 }
 
  h1 {
     margin: 0;
     font-family: $fuente-principal;
-    font-size: 28px; // Ajusta según sea necesario
+    font-size: 28px;
   }
 
   nav {
@@ -36,7 +36,7 @@ main {
 
       li {
         display: inline-block;
-        margin-right: 20px; // Ajusta según sea necesario
+        margin-right: 20px; 
 
         a {
           text-decoration: none;
@@ -44,33 +44,37 @@ main {
           font-family: $fuente-principal;
 
           &:hover {
-            border-bottom: 2px solid $blanco; // Efecto al pasar el ratón
+            border-bottom: 2px solid $blanco; 
           }
         }
       }
     }
   }
 
-    @media (max-width: 768px) {
-    h1 {
-      font-size: 24px; // Ajusta el tamaño de la fuente para pantallas más pequeñas
-    }
-
-    nav {
-      ul {
-        flex-direction: column; // Cambia la dirección de la flexbox para pantallas pequeñas
-        align-items: center; // Centra los elementos en el eje vertical
-      }
-
-      li {
-        display: block; // Cambia el display a bloque para que aparezcan en una línea en pantallas pequeñas
-        margin-bottom: 10px; // Espacio entre los elementos
-      }
-    }
+  @media (max-width: 768px) {
+  header {
+    padding: 10px;
   }
 
+  h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    ul {
+      flex-direction: column; 
+      align-items: center;
+    }
+
+    li {
+      display: block; 
+      margin-bottom: 10px;
+    }
+  }
+}
+
   #introduccion {
-  background-color: #f9f9f9; /* Color de fondo para resaltar la sección de introducción */
+  background-color: #f9f9f9;
   padding: 30px;
   text-align: center;
 }
@@ -137,7 +141,6 @@ main {
   padding-top: 10px;
 }
 
-/* Estilos para Xbox */
 #xbox {
     background-color: #f2f2f2;
     padding: 30px;
@@ -167,7 +170,7 @@ main {
 }
 
 #xbox li {
-    width: 48%; /* Ajusta según sea necesario para mostrar dos elementos en una fila */
+    width: 48%; 
     margin-bottom: 20px;
 }
 
@@ -186,7 +189,7 @@ main {
     text-align: justify;
 }
 
-/* Estilos para PlayStation */
+
 #playstation {
     background-color: #f9f9f9;
     padding: 30px;
@@ -216,7 +219,7 @@ main {
 }
 
 #playstation li {
-    width: 48%; /* Ajusta según sea necesario para mostrar dos elementos en una fila */
+    width: 48%;
     margin-bottom: 20px;
 }
 
@@ -235,7 +238,6 @@ main {
     text-align: justify;
 }
 
-/* Estilos para Nintendo */
 #nintendo {
     background-color: #f2f2f2;
     padding: 30px;
@@ -265,7 +267,7 @@ main {
 }
 
 #nintendo li {
-    width: 48%; /* Ajusta según sea necesario para mostrar dos elementos en una fila */
+    width: 48%;
     margin-bottom: 20px;
 }
 
@@ -292,7 +294,6 @@ footer {
   text-align: center;
 }
 
-/* Estilos para la sección de Xbox - Accesorios y Características */
 #accesorios-x {
   background-color: #f2f2f2;
   padding: 30px;
@@ -342,10 +343,9 @@ footer {
   line-height: 1.6;
 }
 
-/* Estilos para el video */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* Proporción de aspecto para videos 16:9 */
+  padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
@@ -386,4 +386,65 @@ footer {
 
 #comunidad-x a:hover {
   text-decoration: underline;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 50px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+   h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .form-group {
+      margin-bottom: 20px;
+
+      label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: #333;
+      }
+
+      .form-control {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ced4da;
+          border-radius: 5px;
+          transition: border-color 0.2s;
+
+          &:focus {
+              border-color: #007bff;
+              outline: none;
+          }
+
+          &.textarea {
+              resize: vertical;
+          }
+      }
+  }
+
+  .btn-primary {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+          background-color: #0056b3;
+      }
+  }
 }
